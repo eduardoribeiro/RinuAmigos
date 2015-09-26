@@ -1,18 +1,61 @@
 .animais-container{
 	position: absolute;
 	width: 100%;
-	bottom: 0;
+	top: -30px;
 	z-index: -1;
+    display: block;
+    height: 305px;
 	
-	.leao{
-		position: absolute;
-		transition: all .5s ease-in;
-		left: 0;
+	&-wrapper{
+		position: relative;
 	}
 	
-	.elefante{
+	.animal{
 		position: absolute;
 		transition: all .5s ease-in;
-		left: 0;
+		
+		
+		&.leao{
+			right: -122px;
+			background: url("../images/leao.png") no-repeat top left transparent;
+			background-size: contain;
+			top: 0;
+			width: 152px;
+			height: 300px;
+		}
+		
+		&.girafa{
+			right: -157px;
+			background: url("../images/girafa.png") no-repeat top left transparent;
+			background-size: contain;
+			top: -110px;
+			width: 140px;
+			height: 417px;
+		}
+		
+		&.croco{
+			left: -305px;
+			background: url("../images/croco.png") no-repeat top left transparent;
+			background-size: contain;
+			top: 70px;
+			width: 220px;
+			height: 240px;
+		}
+		
+		&.elefante{
+			left: -185px;
+			background: url("../images/elefante.png") no-repeat top left transparent;
+			background-size: contain;
+			top: -40px;
+			width: 265px;
+			height: 350px;
+		}
+		
+		
+		opacity: 1;
 	}
+	
+	
+	
+	
 }

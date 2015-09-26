@@ -464,32 +464,34 @@ thead {
   padding-top: 20px; /* original: 30px ; ISTO FOI PARA ACERTAR O ICONE */
 }
 
-#footer
-{
+#footer{
   background-color: transparent;
   /*background-image: url('../images/backgrounds/dark_mosaic.png');
   background-image: url('http://www.rinueamigos.com/rinuweb/sites/all/themes/bricks//images/website_fundo_rodape.png');*/
   background-image: url('../images/website_fundo_rodape_new.png');
-}
-
-#footer a{
-	color: @color2;
-}
-
-#footer a:hover {
-	color: #ffffff;
-}
-
-.after_footer {
-  color: #fff; /* texto branco */
-}
-
-.after_footer a{
-	color: #fff !important;
-}
-
-.after_footer a:hover{
-	color: #b72758 !important;
+  
+   a{
+		color: @color2;
+		&:hover {
+			color: #ffffff;
+		}
+	}
+	
+	.container{
+		position: relative;
+	}
+	
+	
+	.after_footer {
+	color: #fff; /* texto branco */
+		a{
+			color: #fff !important;
+			
+			&:hover{
+				color: #b72758 !important;
+			}
+		}
+	}
 }
 
 @import "animais.less";
