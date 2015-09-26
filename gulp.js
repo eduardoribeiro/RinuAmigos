@@ -1,6 +1,7 @@
 // Less configuration
-var gulp = require('gulp');
-var less = require('gulp-less');
+var gulp = require('gulp'),
+    less = require('gulp-less'),
+    watch = require('gulp-watch');
 
 gulp.task('less', function() {
     gulp.src('less/*.less')
