@@ -67,9 +67,7 @@
 			"isBuildCommand": true,
 			// Show the output window only if unrecognized errors occur.
 			"showOutput": "always",
-			"isWatching": true,
-			// Use the standard less compilation problem matcher.
-			"problemMatcher": "$lessCompile"
+			"isWatching": true
 		}
 	]
 }
