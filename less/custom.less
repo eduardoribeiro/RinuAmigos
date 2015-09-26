@@ -1,0 +1,493 @@
+/* IAR 
+Rinu website
+June 2015 */
+
+@color1: #ffc90f;
+@color2: #b0dce9;
+@color3: #018baf;
+@color4: #0d5374;
+@color5: #80af3d;
+@color6: #5a7b2a;
+@titleColor: #C9295A;
+
+// Color variables (appears count calculates by raw css)
+@color0: #f7e7eb; // Appears 4 times
+
+.animation-duration(@time) {
+  -moz-animation-duration: @time;
+  -ms-animation-duration: @time;
+  -o-animation-duration: @time;
+  -webkit-animation-duration: @time;
+  animation-duration: @time;
+}
+
+/* IAR CUSTOM */
+.centrado {
+    display: block;
+	text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alinhar-direita {
+	float: right;
+	text-align: right;
+	/*margin: 0 0 15px 15px;*/
+}
+
+.label.alert-grande {
+  background-color: #c60f13;
+  font-size: 25px;
+}
+
+/* centrar blocks do modulo SimpleAds */
+.block-simpleads {
+	text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* BODY STUFF, LINKS, ETC */
+body {
+	padding-top: 128px;
+	background-image: none;
+	background: url('../images/jungle-bg.png') no-repeat bottom center #4195b7;
+	overflow-x: hidden;
+	background-size: 100% auto;
+	
+	a{
+		color: @color3;
+	
+		&:hover {
+			color: @color2;
+			text-decoration: none;
+		}
+	}
+}
+
+thead {
+  background-color: @color3 !important; 
+}
+
+.header_icons li i:hover {
+	color: @color2;
+}
+
+#main_title_text {
+  color: @color3; 
+}  
+
+#main_title_text:hover {
+  color: @color2; 
+}
+
+.footer_icons li i:hover {
+	color: #ffffff;
+}
+
+.post_share li a {
+	color: @color3;
+}
+
+.post_share li i:hover {
+	color: @color2;
+}
+
+.carousel_item_hover i:hover {
+	color: @color2;
+}
+
+.team_image_hover i:hover {
+  color: @color2 !important;
+}
+
+.button {
+	background: @color3 !important;
+	border: 1px solid @color3;
+}
+
+.button:hover{
+	background: @color2 !important;
+	border: 1px solid @color3;
+	text-decoration: underline;
+}
+
+#main_wrapper{
+	box-shadow: 0px 0px 3px #666; 
+}
+
+.region-content{
+
+	.block-views h2{
+		font-family: "Tillana", Helvetica, Arial, sans-serif;
+		font-size: 27px;
+		color: @titleColor;
+	}
+}
+
+
+// Background Animation
+
+#background-wrap {
+	left: 0;
+	padding-top: 50px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
+	max-height: 300px;
+}
+
+@import "clouds.less";
+
+
+/* Widgets */
+.tabs a.active {
+  background: @color3;
+}
+
+.view-popular-tags a:hover {
+  background-color: @color3; 
+}
+
+
+
+
+/* MENU PRINCIPAL */
+
+.top-bar{
+	margin-top: 40px;
+
+	ul > li{
+		margin-left: 0;
+
+		a:not(.button){
+			font-family: "Tillana", Helvetica, Arial, sans-serif;
+			font-size: 15px;
+			padding: 0 15px;
+			transition: all .2s ease-in;
+		}
+
+	}
+
+} 
+
+
+
+.menu_1{
+	background: none;
+	
+	a{
+		color: @color1 !important;
+
+		&.active{
+			color: #fff !important;
+			background: @color1 !important;
+		}
+	}
+
+	&:hover{
+		background: @color1 !important;
+		a{
+			color: #fff !important;
+		}
+	}
+
+	&.has-dropdown{
+		a{
+			padding-right: 34px !important;
+		}
+	}
+
+	.dropdown{
+		background: @color1;
+		li{
+			background: @color1 !important;
+			a{
+				color: #fff !important;
+				
+				&:after{
+					border-color: @color1 transparent transparent transparent !important;
+				}
+			}
+		}
+	}
+}
+
+.menu_2{
+	background: none;
+	
+	a{
+		color: @color2 !important;
+
+		&.active{
+			color: #fff !important;
+			background: @color2 !important;
+		}
+	}
+
+	&:hover{
+		background: @color2 !important;
+		a{
+			color: #fff !important;
+		}
+	}
+
+	&.has-dropdown{
+		a{
+			padding-right: 34px !important;
+		}
+	}
+
+	.dropdown{
+		background: @color2;
+		li{
+			background: @color2 !important;
+			a{
+				color: #fff !important;
+				
+				&:after{
+					border-color: @color2 transparent transparent transparent !important;
+				}
+			}
+		}
+	}
+}
+
+.menu_3{
+	background: none;
+	
+	a{
+		color: @color3 !important;
+
+		&.active{
+			color: #fff !important;
+			background: @color3 !important;
+		}
+	}
+
+	&:hover{
+		background: @color3 !important;
+		a{
+			color: #fff !important;
+		}
+	}
+
+	&.has-dropdown{
+		a{
+			padding-right: 34px !important;
+		}
+	}
+
+	.dropdown{
+		background: @color3;
+		li{
+			background: @color3 !important;
+			a{
+				color: #fff !important;
+				
+				&:after{
+					border-color: @color3 transparent transparent transparent !important;
+				}
+			}
+		}
+	}
+}
+
+.menu_4{
+	background: none;
+	
+	a{
+		color: @color4 !important;
+
+		&.active{
+			color: #fff !important;
+			background: @color4 !important;
+		}
+	}
+
+	&:hover{
+		background: @color4 !important;
+		a{
+			color: #fff !important;
+		}
+	}
+
+	&.has-dropdown{
+		a{
+			padding-right: 34px !important;
+		}
+	}
+
+	.dropdown{
+		background: @color4;
+		li{
+			background: @color4 !important;
+			a{
+				color: #fff !important;
+				
+				&:after{
+					border-color: @color4 transparent transparent transparent !important;
+				}
+			}
+		}
+	}
+}
+
+.menu_5{
+
+	background: none;
+	
+	a{
+		color: @color5 !important;
+
+		&.active{
+			color: #fff !important;
+			background: @color5 !important;
+		}
+	}
+
+	&:hover{
+		background: @color5 !important;
+		a{
+			color: #fff !important;
+		}
+	}
+
+	&.has-dropdown{
+		a{
+			padding-right: 34px !important;
+
+			&:after{
+				border-color: @color5 transparent transparent transparent !important;
+			}
+
+			&:hover{
+				&:after{
+					border-color: white transparent transparent transparent !important;
+				}
+			}
+		}
+
+		&:hover{
+			a:after{
+				border-color: white transparent transparent transparent !important;
+			}
+		}
+	}
+
+	.dropdown{
+		background: @color5;
+		li{
+			background: @color5 !important;
+			a{
+				color: #fff !important;
+				
+				&:after{
+					border-color: @color5 transparent transparent transparent !important;
+				}
+			}
+		}
+	}
+
+}
+
+.menu_6{
+	background: none;
+	
+	a{
+		color: @color6 !important;
+
+		&.active{
+			color: #fff !important;
+			background: @color6 !important;
+		}
+	}
+
+	&:hover{
+		background: @color6 !important;
+		a{
+			color: #fff !important;
+		}
+	}
+
+	&.has-dropdown{
+		a{
+			padding-right: 34px !important;
+		}
+	}
+
+	.dropdown{
+		background: @color6;
+		li{
+			background: @color6 !important;
+			a{
+				color: #fff !important;
+				
+				&:after{
+					border-color: @color6 transparent transparent transparent !important;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+/* SUB-MENU */
+.top-bar ul.right .has-dropdown .dropdown { left: auto; right: 0px; }
+
+
+/* CABECALHO (apenas paginas) */
+#heading_wrapper {
+	box-shadow: none; /* original: 0px 0px 3px 0px black ; */
+	background: @color3;
+}
+
+#top_header{
+	display: none;
+}
+
+
+
+
+/* ZONA DO RODAPE */
+
+#highlight {
+	background: @color3; /* azul rinu */
+	box-shadow: none; /* original: 0px 0px 9px -2px black ; */
+}
+
+.highlight_icon {
+  padding-top: 20px; /* original: 30px ; ISTO FOI PARA ACERTAR O ICONE */
+}
+
+#footer
+{
+  background-color: transparent;
+  /*background-image: url('../images/backgrounds/dark_mosaic.png');
+  background-image: url('http://www.rinueamigos.com/rinuweb/sites/all/themes/bricks//images/website_fundo_rodape.png');*/
+  background-image: url('../images/website_fundo_rodape_new.png');
+}
+
+#footer a{
+	color: @color2;
+}
+
+#footer a:hover {
+	color: #ffffff;
+}
+
+.after_footer {
+  color: #fff; /* texto branco */
+}
+
+.after_footer a{
+	color: #fff !important;
+}
+
+.after_footer a:hover{
+	color: #b72758 !important;
+}
