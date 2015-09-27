@@ -57,16 +57,18 @@
 		
 		&.croco{
 			left: -305px;
+			//left: 0;
 			background: url("../images/croco.png") no-repeat top left transparent;
 			background-size: contain;
 			top: 70px;
 			width: 220px;
 			height: 240px;
-			animation: croco 16s ease-in-out infinite;
+			animation: croco 24s ease-in-out infinite;
 		}
 		
 		&.elefante{
 			left: -185px;
+			//left: 0;
 			background: url("../images/elefante.png") no-repeat top left transparent;
 			background-size: contain;
 			top: -40px;
@@ -94,30 +96,42 @@
 
 @keyframes croco {
   0% { 
-	  left: 0;
+	  left: 0px;
 	  opacity: 0; 
   }
+  25% {
+		opacity: 1;
+	}
   50% { 
 	  left: -305px;
 	  opacity: 1; 
   }
+  75% {
+		opacity: 1;
+	}
   100% { 
-	  left: 0;
+	  left: 0px;
 	  opacity: 0; 
   }
 }
 
 @keyframes elefante {
 	0% {
-		left: 0;
+		left: 0px;
 		opacity: 0;
+	}
+	25% {
+		opacity: 1;
 	}
 	50% {
 		left: -185px;
 		opacity: 1;
 	}
+	75% {
+		opacity: 1;
+	}
 	100% {
-		left: 0;
+		left: 0px;
 		opacity: 0;
 	}
 }
